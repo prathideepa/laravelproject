@@ -61,4 +61,11 @@ class ApiController extends Controller
         $response['user'] =$user;
         return response()->json($response,200);
     }
+    //testing git
+    public function userlist1(Request $request){
+
+        $user =Auth::user();
+        $response['user'] =$user;
+        return response()->json($response,200);
+    }
 }
